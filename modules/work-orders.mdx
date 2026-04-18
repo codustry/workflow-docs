@@ -1,0 +1,41 @@
+---
+title: "Work Orders (WO)"
+description: "Manage production runs with material issuance and output receipt"
+---
+
+## Overview
+
+A Work Order (WO) represents a production run. It issues raw materials from stock and records finished goods received into inventory.
+
+<Accordion title="ภาษาไทย">
+ใบสั่งผลิต (WO) แทนรอบการผลิต โดยเบิกวัตถุดิบออกจากสต็อกและบันทึกสินค้าสำเร็จรูปเข้าสู่คลัง
+</Accordion>
+
+## WO Lifecycle
+
+```
+Draft ─> In Progress ─> Completed
+```
+
+## Creating a Work Order
+
+1. Go to **Work Orders** → **New Work Order**
+2. Select the finished product and BOM
+3. Enter the planned quantity
+4. Select source warehouse for materials
+5. Review auto-populated material lines from BOM
+6. Click **Start** to begin production
+
+*ไปที่ **Work Orders** → **New Work Order** เลือกสินค้าสำเร็จรูปและ BOM กรอกจำนวน เลือกคลังวัตถุดิบ ตรวจสอบรายการวัตถุดิบ แล้วกด **Start***
+
+## Issuing Materials
+
+When you start a Work Order, the system checks stock availability. For serial-tracked materials, you must select specific serial numbers to issue.
+
+*เมื่อเริ่ม WO ระบบจะตรวจสอบความพร้อมของสต็อก สำหรับวัตถุดิบที่ติดตาม Serial จะต้องเลือก Serial Number ที่จะเบิก*
+
+## Receiving Output
+
+After production, record the actual output quantity. The system will add finished goods to inventory.
+
+*หลังการผลิต บันทึกจำนวนสินค้าสำเร็จรูปจริง ระบบจะเพิ่มเข้าสู่คลังสินค้า*
