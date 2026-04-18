@@ -1,0 +1,38 @@
+---
+title: "Purchase Orders (PO)"
+description: "Generate and manage Purchase Orders from approved PRs"
+---
+
+## Overview
+
+Purchase Orders (POs) are generated from approved Purchase Requests. The system automatically groups line items by vendor to create separate POs per vendor.
+
+<Accordion title="ภาษาไทย">
+ใบสั่งซื้อ (PO) ถูกสร้างจากใบขอซื้อที่อนุมัติแล้ว ระบบจะจัดกลุ่มรายการตามผู้จำหน่ายโดยอัตโนมัติ
+</Accordion>
+
+## PO Lifecycle
+
+```
+Generated ─> Sent ─> Partially Received ─> Fully Received
+```
+
+## Generating a PO
+
+1. Go to **Purchase Orders** → **Generate from PR**
+2. Select the approved PR
+3. Review the auto-generated PO lines grouped by vendor
+4. Confirm unit prices and delivery dates
+5. Click **Create PO**
+
+*ไปที่ **Purchase Orders** → **Generate from PR** เลือก PR ที่อนุมัติแล้ว ตรวจสอบรายการและราคา แล้วกด **Create PO***
+
+## Key Fields
+
+| Field | Description |
+|---|---|
+| **PO Number** | Auto-generated sequential number |
+| **Vendor** | Supplier for this PO |
+| **Currency** | Vendor's currency |
+| **Delivery Date** | Expected delivery |
+| **Line Items** | Products, quantities, and unit prices |
