@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Workflow - Codustry",
+  "name": "Workflow Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,17 +11,18 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "คู่มือการใช้งาน",
+        "tab": "User Guide",
         "groups": [
           {
-            "group": "เริ่มต้นใช้งาน",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart"
+              "quickstart",
+              "development"
             ]
           },
           {
-            "group": "ข้อมูลหลัก",
+            "group": "Master Data",
             "pages": [
               "modules/products",
               "modules/vendors",
@@ -30,7 +31,7 @@
             ]
           },
           {
-            "group": "การจัดซื้อ",
+            "group": "Procurement",
             "pages": [
               "modules/job-controls",
               "modules/purchase-requests",
@@ -39,7 +40,7 @@
             ]
           },
           {
-            "group": "คลังสินค้าและสินค้าคงคลัง",
+            "group": "Warehouse & Inventory",
             "pages": [
               "modules/goods-receipts",
               "modules/inventory",
@@ -48,19 +49,19 @@
             ]
           },
           {
-            "group": "การผลิต",
+            "group": "Production",
             "pages": [
               "modules/work-orders"
             ]
           },
           {
-            "group": "การจัดส่ง",
+            "group": "Delivery",
             "pages": [
               "modules/delivery-notes"
             ]
           },
           {
-            "group": "การจัดการระบบ",
+            "group": "Administration",
             "pages": [
               "modules/users",
               "modules/settings"
@@ -72,7 +73,7 @@
     "global": {
       "anchors": [
         {
-          "anchor": "แอปพลิเคชัน",
+          "anchor": "Open App",
           "href": "https://workflow.codustry.com",
           "icon": "arrow-up-right-from-square"
         }
@@ -86,13 +87,13 @@
   "navbar": {
     "links": [
       {
-        "label": "ติดต่อเรา",
+        "label": "Support",
         "href": "mailto:thunpisit@codustry.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "เข้าสู่ระบบ",
+      "label": "Open App",
       "href": "https://workflow.codustry.com"
     }
   },
