@@ -1,0 +1,34 @@
+---
+title: "Delivery Notes (DN)"
+description: "Ship finished goods to customers"
+---
+
+## Overview
+
+A Delivery Note (DN) records the shipment of goods to a customer. Posting a DN automatically deducts quantities from warehouse stock.
+
+<Accordion title="ภาษาไทย">
+ใบส่งสินค้า (DN) บันทึกการจัดส่งสินค้าให้ลูกค้า การ Post DN จะหักจำนวนออกจากคลังสินค้าโดยอัตโนมัติ
+</Accordion>
+
+## DN Lifecycle
+
+```
+Draft ─> Posted
+```
+
+## Creating a Delivery Note
+
+1. Go to **Delivery Notes** → **New DN**
+2. Select the customer and delivery warehouse
+3. Add line items with product and quantity
+4. For serial-tracked products, select specific serial numbers
+5. Click **Post**
+
+*ไปที่ **Delivery Notes** → **New DN** เลือกลูกค้าและคลัง เพิ่มรายการสินค้า สำหรับสินค้าที่ติดตาม Serial ให้เลือก Serial Number แล้วกด **Post***
+
+<Warning>
+Once **Posted**, stock is deducted and the document cannot be edited.
+
+*เมื่อ **Post** แล้ว สต็อกจะถูกหักและไม่สามารถแก้ไขเอกสารได้*
+</Warning>
