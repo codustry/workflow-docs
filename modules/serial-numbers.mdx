@@ -1,0 +1,35 @@
+---
+title: "Serial Number Tracking"
+description: "Track individual units from receipt through production to delivery"
+---
+
+## Overview
+
+For products with **Serial Number** tracking enabled, Workflow tracks each unit individually through the entire lifecycle.
+
+<Accordion title="ภาษาไทย">
+สำหรับสินค้าที่เปิดใช้งาน **Serial Number** Workflow จะติดตามแต่ละหน่วยตลอดวงจรชีวิตของสินค้า
+</Accordion>
+
+## Serial Lifecycle
+
+```
+GR Receipt ─> In Stock ─> WO Issue ─> In Production ─> WO Receipt ─> Finished ─> DN Shipment ─> Delivered
+```
+
+## Capturing Serials
+
+- **Goods Receipt** — Enter serial numbers after posting the GR
+- **Work Order** — Select specific serials when issuing materials
+- **Delivery Note** — Select specific serials when shipping to customers
+
+*Serial Number จะถูกกรอกหลัง Post GR เลือกเมื่อเบิกวัตถุดิบในใบสั่งผลิต และเลือกเมื่อสร้างใบส่งสินค้า*
+
+## Serial Number Status
+
+| Status | Meaning |
+|---|---|
+| In Stock | Available in warehouse |
+| Issued | Used in a Work Order |
+| Finished | Produced as output |
+| Delivered | Shipped via Delivery Note |
