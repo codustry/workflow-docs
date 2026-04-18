@@ -1,0 +1,43 @@
+---
+title: "Products"
+description: "Manage your SKU catalog with tracking and unit of measure"
+---
+
+## Overview
+
+The Products module stores your complete SKU catalog. Each product defines how inventory is tracked and what unit of measure is used throughout the system.
+
+<Accordion title="ภาษาไทย">
+โมดูล Products เก็บรายการสินค้าทั้งหมด แต่ละรายการกำหนดวิธีการติดตามสินค้าคงคลังและหน่วยวัดที่ใช้ทั่วทั้งระบบ
+</Accordion>
+
+## Key Fields
+
+| Field | Description |
+|---|---|
+| **SKU** | Unique product code |
+| **Name** | Product display name |
+| **Unit of Measure** | e.g., pcs, kg, box |
+| **Tracking Type** | None, Serial Number, or Batch |
+| **Description** | Optional product notes |
+
+## Tracking Types
+
+- **None** — Standard inventory tracking by quantity only
+- **Serial Number** — Each unit has a unique serial (tracked through GR → WO → DN)
+- **Batch** — Group of units share a batch code
+
+<Accordion title="ภาษาไทย — ประเภทการติดตาม">
+- **None** — ติดตามด้วยจำนวนเท่านั้น
+- **Serial Number** — แต่ละชิ้นมีหมายเลขซีเรียลเฉพาะ (ติดตามตั้งแต่รับสินค้าจนถึงจัดส่ง)
+- **Batch** — กลุ่มสินค้าใช้รหัส batch ร่วมกัน
+</Accordion>
+
+## Creating a Product
+
+1. Navigate to **Products** in the sidebar
+2. Click **New Product**
+3. Fill in SKU, name, unit of measure, and tracking type
+4. Click **Save**
+
+*ไปที่ **Products** ในแถบด้านข้าง กด **New Product** กรอก SKU ชื่อ หน่วยวัด และประเภทการติดตาม แล้วกด **Save***
