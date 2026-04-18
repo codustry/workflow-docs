@@ -1,0 +1,42 @@
+---
+title: "Goods Receipts (GR)"
+description: "Receive goods against Purchase Orders"
+---
+
+## Overview
+
+A Goods Receipt (GR) records the physical receipt of goods from a supplier against a Purchase Order. GRs update inventory levels and, for serial-tracked products, capture serial numbers.
+
+<Accordion title="ภาษาไทย">
+ใบรับสินค้า (GR) บันทึกการรับสินค้าจริงจากผู้จำหน่ายตาม PO GR จะอัปเดตระดับสินค้าคงคลังและบันทึก Serial Number สำหรับสินค้าที่มีการติดตาม
+</Accordion>
+
+## GR Lifecycle
+
+```
+Draft ─> Posted
+```
+
+<Warning>
+Once a GR is **Posted**, inventory levels are updated and the document cannot be edited.
+
+*เมื่อ GR ถูก **Post** แล้ว ระดับสินค้าคงคลังจะถูกอัปเดตและไม่สามารถแก้ไขเอกสารได้*
+</Warning>
+
+## Creating a GR
+
+1. Go to **Goods Receipts** → **New GR**
+2. Select the Purchase Order
+3. For each line, enter:
+   - **Accepted Qty** — quantity that passes quality inspection
+   - **Rejected Qty** — quantity that fails inspection
+4. For serial-tracked products, enter serial numbers after posting
+5. Click **Post**
+
+*ไปที่ **Goods Receipts** → **New GR** เลือก PO กรอกจำนวนรับ/ปฏิเสธ สำหรับสินค้าที่ติดตาม Serial ให้กรอก Serial Number หลัง Post แล้วกด **Post***
+
+## Quality Inspection
+
+Each GR line supports separate accepted and rejected quantities, allowing partial acceptance of a delivery.
+
+*แต่ละรายการใน GR รองรับจำนวนรับและปฏิเสธแยกกัน ทำให้รับสินค้าบางส่วนได้*
