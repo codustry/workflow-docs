@@ -1,0 +1,44 @@
+---
+title: "Purchase Requests (PR)"
+description: "Create and manage internal purchase requests"
+---
+
+## Overview
+
+A Purchase Request (PR) is an internal document raised by any team member to request the procurement of goods or services. PRs go through an approval workflow before becoming Purchase Orders.
+
+<Accordion title="ภาษาไทย">
+ใบขอซื้อ (PR) คือเอกสารภายในที่ทีมงานสร้างขึ้นเพื่อขออนุมัติการจัดซื้อ PR จะผ่านกระบวนการอนุมัติก่อนแปลงเป็นใบสั่งซื้อ
+</Accordion>
+
+## PR Lifecycle
+
+```
+Draft ─> Submitted ─> Approved ─> PO Created
+              └──> Rejected / Returned
+```
+
+## Creating a PR
+
+1. Go to **Purchase Requests** → **New PR**
+2. Select a Job Control (optional)
+3. Select preferred vendor
+4. Add line items — each line has:
+   - Product (existing SKU) or free-text description
+   - Quantity and unit of measure
+   - Estimated unit price
+5. Add notes if needed
+6. Click **Submit** to send for approval
+
+*ไปที่ **Purchase Requests** → **New PR** เลือก Job Control และผู้จำหน่าย เพิ่มรายการสินค้าพร้อมจำนวนและราคาประมาณ แล้วกด **Submit***
+
+## Statuses
+
+| Status | Meaning |
+|---|---|
+| Draft | Saved but not yet submitted |
+| Submitted | Awaiting approval |
+| Approved | Ready to convert to PO |
+| Rejected | Denied by approver |
+| Returned | Sent back for revision |
+| PO Created | Purchase Order has been generated |
