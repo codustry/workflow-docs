@@ -1,17 +1,19 @@
 ---
-title: "ภาพรวมระบบ / System Overview"
-description: "Workflow — ระบบ ERP สำหรับธุรกิจการผลิตและจัดซื้อ | ERP system for manufacturing and procurement startups"
+title: "System Overview"
+description: "Workflow — ERP system for manufacturing and procurement startups"
 ---
 
-## Workflow คืออะไร? / What is Workflow?
-
-**Workflow** คือระบบปฏิบัติการภายในองค์กรสำหรับธุรกิจสตาร์ทอัพด้านการผลิตและการจัดซื้อ ครอบคลุมวงจรการดำเนินงานทั้งหมด ตั้งแต่การวางแผนงานและการขอซื้อ ไปจนถึงการจัดซื้อ การรับสินค้า การผลิต การจัดการสินค้าคงคลัง และการจัดส่ง
+## What is Workflow?
 
 **Workflow** is an internal operations system for manufacturing and procurement startups, covering the full operational cycle — from job planning and purchase requests through procurement, receiving, production, inventory management, and delivery.
 
-**เข้าใช้งาน:** [workflow.codustry.com](https://workflow.codustry.com)
+**Live:** [workflow.codustry.com](https://workflow.codustry.com)
 
-## วงจรการทำงาน / Core Workflow
+<Accordion title="ภาษาไทย">
+**Workflow** คือระบบปฏิบัติการภายในองค์กรสำหรับธุรกิจสตาร์ทอัพด้านการผลิตและการจัดซื้อ ครอบคลุมวงจรการดำเนินงานทั้งหมด ตั้งแต่การวางแผนงานและการขอซื้อ ไปจนถึงการจัดซื้อ การรับสินค้า การผลิต การจัดการสินค้าคงคลัง และการจัดส่ง
+</Accordion>
+
+## Core Workflow
 
 ```
 Job Control ─> Purchase Request ─> Approval ─> Purchase Order ─> Goods Receipt
@@ -19,41 +21,35 @@ Job Control ─> Purchase Request ─> Approval ─> Purchase Order ─> Goods R
                  Delivery Note <── Work Order <── BOM <── Inventory <───┘
 ```
 
-## โมดูลหลัก / Core Modules
+## Modules
 
 <Columns cols={2}>
-  <Card title="ข้อมูลหลัก / Master Data" icon="database" href="/modules/products">
-    สินค้า, ผู้จำหน่าย, คลังสินค้า, สูตรการผลิต (BOM)
-    Products, Vendors, Warehouses, Bill of Materials
+  <Card title="Master Data" icon="database" href="/modules/products">
+    Products, Vendors, Warehouses, Bill of Materials (BOM)
   </Card>
-  <Card title="การจัดซื้อ / Procurement" icon="cart-shopping" href="/modules/purchase-requests">
-    Job Control, ใบขอซื้อ, การอนุมัติ, ใบสั่งซื้อ
-    Job Controls, PRs, Approvals, POs
+  <Card title="Procurement" icon="cart-shopping" href="/modules/purchase-requests">
+    Job Controls, Purchase Requests, Approvals, Purchase Orders
   </Card>
-  <Card title="คลังสินค้า / Warehouse" icon="warehouse" href="/modules/goods-receipts">
-    รับสินค้า, สินค้าคงคลัง, ปรับปรุงสต็อก, ติดตาม Serial
-    Goods Receipts, Inventory, Adjustments, Serial Tracking
+  <Card title="Warehouse & Inventory" icon="warehouse" href="/modules/goods-receipts">
+    Goods Receipts, Inventory Dashboard, Stock Adjustments, Serial Tracking
   </Card>
-  <Card title="การผลิต / Production" icon="industry" href="/modules/work-orders">
-    ใบสั่งผลิต (Work Orders) พร้อมการเบิกวัตถุดิบและรับสินค้าสำเร็จรูป
-    Work Orders with material issuance and output receipt
+  <Card title="Production" icon="industry" href="/modules/work-orders">
+    Work Orders with material issuance and finished goods receipt
   </Card>
-  <Card title="การจัดส่ง / Delivery" icon="truck" href="/modules/delivery-notes">
-    ใบส่งสินค้า (Delivery Notes) พร้อมตัดสต็อกอัตโนมัติ
-    Delivery Notes with automatic stock deduction
+  <Card title="Delivery" icon="truck" href="/modules/delivery-notes">
+    Delivery Notes with automatic warehouse stock deduction
   </Card>
-  <Card title="การจัดการระบบ / Admin" icon="gear" href="/modules/users">
-    จัดการผู้ใช้, สิทธิ์การเข้าถึง, การตั้งค่าองค์กร
-    User Management, Roles, Organization Settings
+  <Card title="Administration" icon="gear" href="/modules/users">
+    User Management, Role-based access, Organization Settings
   </Card>
 </Columns>
 
-## สถาปัตยกรรมระบบ / Architecture
+## Tech Stack
 
-| ชั้น / Layer | เทคโนโลยี / Technology |
+| Layer | Technology |
 |---|---|
-| Frontend | SvelteKit (Svelte 5) + TypeScript |
+| Framework | SvelteKit (Svelte 5) + TypeScript |
 | Styling | Tailwind CSS v4 |
 | Database | Supabase (PostgreSQL + Row-Level Security) |
-| Auth | Supabase Auth |
+| Auth | Supabase Auth (email/password) |
 | Deployment | Cloudflare Pages |
